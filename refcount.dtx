@@ -1,13 +1,13 @@
 % \iffalse meta-comment
 %
 % File: refcount.dtx
-% Version: 2016/05/16 v3.5
+% Version: 2019/12/15 v3.6
 % Info: Data extraction from label references
 %
 % Copyright (C)
 %    1998, 2000, 2006, 2008, 2010, 2011 Heiko Oberdiek
 %    2016-2019 Oberdiek Package Support Group
-%    https://github.com/ho-tex/oberdiek/issues
+%    https://github.com/ho-tex/refcount/issues
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -23,7 +23,7 @@
 %
 % The Current Maintainers of this work are
 % Heiko Oberdiek and the Oberdiek Package Support Group
-% https://github.com/ho-tex/oberdiek/issues
+% https://github.com/ho-tex/refcount/issues
 %
 % This work consists of the main source file refcount.dtx
 % and the derived files
@@ -32,8 +32,8 @@
 %    refcount-test4.tex, refcount-test5.tex.
 %
 % Distribution:
-%    CTAN:macros/latex/contrib/oberdiek/refcount.dtx
-%    CTAN:macros/latex/contrib/oberdiek/refcount.pdf
+%    CTAN:macros/latex/contrib/refcount/refcount.dtx
+%    CTAN:macros/latex/contrib/refcount/refcount.pdf
 %
 % Unpacking:
 %    (a) If refcount.ins is present:
@@ -62,9 +62,9 @@
 %       pdflatex refcount.dtx
 %
 % Installation:
-%    TDS:tex/latex/oberdiek/refcount.sty
-%    TDS:doc/latex/oberdiek/refcount.pdf
-%    TDS:source/latex/oberdiek/refcount.dtx
+%    TDS:tex/latex/refcount/refcount.sty
+%    TDS:doc/latex/refcount/refcount.pdf
+%    TDS:source/latex/refcount/refcount.dtx
 %
 %<*ignore>
 \begingroup
@@ -81,7 +81,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)}
+\Msg{* Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -93,7 +93,7 @@
 This is a generated file.
 
 Project: refcount
-Version: 2016/05/16 v3.5
+Version: 2019/12/15 v3.6
 
 Copyright (C)
    1998, 2000, 2006, 2008, 2010, 2011 Heiko Oberdiek
@@ -113,7 +113,7 @@ This work has the LPPL maintenance status "maintained".
 
 The Current Maintainers of this work are
 Heiko Oberdiek and the Oberdiek Package Support Group
-https://github.com/ho-tex/oberdiek/issues
+https://github.com/ho-tex/refcount/issues
 
 
 This work consists of the main source file refcount.dtx
@@ -128,14 +128,8 @@ and the derived files
 \generate{%
   \file{refcount.ins}{\from{refcount.dtx}{install}}%
   \file{refcount.drv}{\from{refcount.dtx}{driver}}%
-  \usedir{tex/latex/oberdiek}%
+  \usedir{tex/latex/refcount}%
   \file{refcount.sty}{\from{refcount.dtx}{package}}%
-%  \usedir{doc/latex/oberdiek/test}%
-%  \file{refcount-test1.tex}{\from{refcount.dtx}{test1}}%
-%  \file{refcount-test2.tex}{\from{refcount.dtx}{test2}}%
-%  \file{refcount-test3.tex}{\from{refcount.dtx}{test3}}%
-%  \file{refcount-test4.tex}{\from{refcount.dtx}{test3,test4}}%
-%  \file{refcount-test5.tex}{\from{refcount.dtx}{test5}}%
 }
 
 \catcode32=13\relax% active space
@@ -162,7 +156,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{refcount.drv}%
-  [2016/05/16 v3.5 Data extraction from label references (HO)]%
+  [2019/12/15 v3.6 Data extraction from label references (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \begin{document}
@@ -176,9 +170,9 @@ and the derived files
 % \GetFileInfo{refcount.drv}
 %
 % \title{The \xpackage{refcount} package}
-% \date{2016/05/16 v3.5}
+% \date{2019/12/15 v3.6}
 % \author{Heiko Oberdiek\thanks
-% {Please report any issues at \url{https://github.com/ho-tex/oberdiek/issues}}}
+% {Please report any issues at \url{https://github.com/ho-tex/refcount/issues}}}
 %
 % \maketitle
 %
@@ -404,7 +398,7 @@ and the derived files
   \fi
 \expandafter\x\csname ver@refcount.sty\endcsname
 \ProvidesPackage{refcount}%
-  [2016/05/16 v3.5 Data extraction from label references (HO)]%
+  [2019/12/15 v3.6 Data extraction from label references (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -882,8 +876,8 @@ and the derived files
 % \paragraph{Package.} This package is available on
 % CTAN\footnote{\CTANpkg{refcount}}:
 % \begin{description}
-% \item[\CTAN{macros/latex/contrib/oberdiek/refcount.dtx}] The source file.
-% \item[\CTAN{macros/latex/contrib/oberdiek/refcount.pdf}] Documentation.
+% \item[\CTAN{macros/latex/contrib/refcount/refcount.dtx}] The source file.
+% \item[\CTAN{macros/latex/contrib/refcount/refcount.pdf}] Documentation.
 % \end{description}
 %
 %
@@ -892,7 +886,7 @@ and the derived files
 % the packages are already unpacked and the documentation files
 % are generated. The files and directories obey the TDS standard.
 % \begin{description}
-% \item[\CTANinstall{install/macros/latex/contrib/oberdiek.tds.zip}]
+% \item[\CTANinstall{install/macros/latex/contrib/refcount.tds.zip}]
 % \end{description}
 % \emph{TDS} refers to the standard ``A Directory Structure
 % for \TeX\ Files'' (\CTANpkg{tds}). Directories
@@ -922,9 +916,9 @@ and the derived files
 % \begin{quote}
 % \def\t{^^A
 % \begin{tabular}{@{}>{\ttfamily}l@{ $\rightarrow$ }>{\ttfamily}l@{}}
-%   refcount.sty & tex/latex/oberdiek/refcount.sty\\
-%   refcount.pdf & doc/latex/oberdiek/refcount.pdf\\
-%   refcount.dtx & source/latex/oberdiek/refcount.dtx\\
+%   refcount.sty & tex/latex/refcount/refcount.sty\\
+%   refcount.pdf & doc/latex/refcount/refcount.pdf\\
+%   refcount.dtx & source/latex/refcount/refcount.dtx\\
 % \end{tabular}^^A
 % }^^A
 % \sbox0{\t}^^A
@@ -1088,6 +1082,10 @@ and the derived files
 %     Macros \cs{(set|addto)counter(page|)ref} are made robust.
 %   \end{Version}
 %   \begin{Version}{2016/05/16 v3.5}
+%   \item
+%     Documentation updates.
+%   \end{Version}
+%   \begin{Version}{2019/12/15 v3.6}
 %   \item
 %     Documentation updates.
 %   \end{Version}
