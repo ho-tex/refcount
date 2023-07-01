@@ -3,7 +3,7 @@
 refcount package for LaTeX
 
 
-References are not numbers, however they often store numerical
+References are not numbers, however, they often store numerical
 data such as section or page numbers. \ref or \pageref
 cannot be used for counter assignments or calculations because
 they are not expandable, generate warnings, or can even be links.
