@@ -177,7 +177,7 @@ and the derived files
 % \maketitle
 %
 % \begin{abstract}
-% References are not numbers, however they often store numerical
+% References are not numbers, however, they often store numerical
 % data such as section or page numbers. \cs{ref} or \cs{pageref}
 % cannot be used for counter assignments or calculations because
 % they are not expandable, generate warnings, or can even be links.
@@ -204,7 +204,7 @@ and the derived files
 %    \cs{...counter...ref} |{|\meta{\LaTeX\ counter}|}|
 %    |{|\meta{reference}|}|
 % \end{quote}
-% An undefined references produces the usual LaTeX warning
+% An undefined reference produces the usual \LaTeX warning
 % and its value is assumed to be zero.
 % Example:
 % \begin{quote}
@@ -219,7 +219,7 @@ and the derived files
 %
 % \subsection{Expandable commands}
 %
-% These commands that can be used in expandible contexts
+% These commands that can be used in expandable contexts
 % (inside calculations, \cs{edef}, \cs{csname}, \cs{write}, \dots):
 % \begin{quote}
 %   \cs{getrefnumber}, \cs{getpagerefnumber}
@@ -235,7 +235,7 @@ and the derived files
 %   \cs{setrefcountdefault}|{0}|
 % \end{quote}
 %
-% Since version 2.0 of this package there is a new
+% Since version 2.0 of this package, there is a new
 % command:
 % \begin{quote}
 %   \cs{getrefbykeydefault} |{|\meta{reference}|}|
@@ -244,7 +244,7 @@ and the derived files
 % This generalized version allows the extraction
 % of further properties of a reference than the
 % two standard ones. Thus the following properties
-% are supported, if they are available:
+% are supported if they are available:
 % \begin{quote}
 % \begin{tabular}{@{}l|l|l@{}}
 %    Key & Description & Package\\
@@ -258,14 +258,14 @@ and the derived files
 % \end{tabular}
 % \end{quote}
 %
-% Since version 3.2 the expandable macros described before
+% Since version 3.2, the expandable macros described before
 % in this section
-% are expandable in exact two expansion steps.
+% are expandable in exactly two expansion steps.
 %
 % \subsection{Undefined references}
 %
 % Because warnings and assignments cannot be used in
-% expandible contexts, undefined references do not
+% expandable contexts, undefined references do not
 % produce a warning, their values are assumed to be zero.
 % Example:
 % \begin{quote}
@@ -280,18 +280,18 @@ and the derived files
 %\end{verbatim}
 % \end{quote}
 %
-% In case of undefined references the user usually want's
+% In case of undefined references the user usually wants
 % to be informed. Also \LaTeX\ prints a warning at
 % the end of the \LaTeX\ run. To notify \LaTeX\ and
 % get a normal warning, just use
 % \begin{quote}
 %   \cs{refused} |{|\meta{reference}|}|
 % \end{quote}
-% outside the expanding context. Example, see above.
+% outside the expanding context. Example: see above.
 %
 % \subsubsection{Check for undefined references}
 %
-% In version 3.2 macros were added, that test, whether references
+% In version 3.2, macros were added that test whether references
 % are defined.
 % \begin{declcs}{IfRefUndefinedExpandable} \M{refname} \M{then} \M{else}\\
 %   \cs{IfRefUndefinedBabel} \M{refname} \M{then} \M{else}
@@ -308,14 +308,14 @@ and the derived files
 % \begin{itemize}
 % \item
 %   The method of extracting the number in this
-%   package also works in cases, where the
-%   reference cannot be used directly, because
+%   package also works in cases where the
+%   reference cannot be used directly because
 %   a package such as \xpackage{hyperref} has added
-%   extra stuff (hyper link), so that the reference cannot
+%   extra stuff (hyperlink) so that the reference cannot
 %   be used as number any more.
 % \item
 %   If the reference does not contain a number,
-%   assignments to a counter will fail of course.
+%   assignments to a counter will fail, of course.
 % \end{itemize}
 %
 %
@@ -473,7 +473,7 @@ and the derived files
       \else
         \@PackageError{refcount}{%
           Command \string#1 is already defined.\MessageBreak
-          It will not redefined by this package%
+          It will not be redefined by this package%
         }\@ehc
         \expandafter\expandafter\expandafter\ltx@gobble
       \fi
@@ -882,7 +882,7 @@ and the derived files
 %
 %
 % \paragraph{Bundle.} All the packages of the bundle `oberdiek'
-% are also available in a TDS compliant ZIP archive. There
+% are also available in a TDS compliant ZIP archive. There,
 % the packages are already unpacked and the documentation files
 % are generated. The files and directories obey the TDS standard.
 % \begin{description}
@@ -1063,7 +1063,7 @@ and the derived files
 %     \cs{IfRefUndefinedExpandable} and \cs{IfRefUndefinedBabel} added.
 %   \item
 %     \cs{getrefnumber}, \cs{getpagerefnumber}, \cs{getrefbykeydefault}
-%     are expandable in exact two expansion steps.
+%     are expandable in exactly two expansion steps.
 %   \item
 %     Non-expandable macros are made robust.
 %   \item
